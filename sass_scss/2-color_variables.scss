@@ -1,0 +1,14 @@
+/* write color variable for background and h2*/
+$gray: #3D3D3D;
+$dimGray : #6D6D6D;
+
+body {
+    color: $gray;
+    background-color: $dimGray; 
+}
+p {
+    color: $gray;
+}
+h2 {
+    background-color: $dimGray; 
+}
