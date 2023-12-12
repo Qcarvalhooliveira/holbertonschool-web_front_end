@@ -1,3 +1,5 @@
+![Sass](https://github.com/Qcarvalhooliveira/holbertonschool-web_front_end/blob/master/sass_scss/image/Sass.png)
+
 # SASS SCSS :computer:
 
 ## **Description** :speech_balloon:
