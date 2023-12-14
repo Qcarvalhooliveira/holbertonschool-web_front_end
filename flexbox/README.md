@@ -1,3 +1,5 @@
+![flexbox](https://github.com/Qcarvalhooliveira/holbertonschool-web_front_end/blob/master/flexbox/image/flexbox.png)
+
 # Flexbox :computer:
 
 ## **Description** :speech_balloon:
@@ -223,10 +225,10 @@ In your 13-article.html
     Replace the href in the links with a default value ( #)
 
 
-## **Author**
+## **Author** :black_nib:
 
 * **Queise Carvalho de Oliveira** - [Queise Oliveira](https://github.com/Qcarvalhooliveira)
 
 
-## License
-This project is licensed under the [MIT License](LICENSE).
+## License :page_with_curl:
+This project is licensed under the [MIT License](https://opensource.org/license/mit/).
