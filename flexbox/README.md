@@ -1,4 +1,4 @@
-![flexbox](https://github.com/Qcarvalhooliveira/holbertonschool-web_front_end/blob/master/flexbox/image/flexbox.png)
+![flexbox](https://github.com/Qcarvalhooliveira/holbertonschool-web_front_end/blob/master/flexbox/images/flexbox.png)
 
 # Flexbox :computer:
 
