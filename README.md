@@ -10,3 +10,7 @@
 
 ### [sass_scss](https://github.com/Qcarvalhooliveira/holbertonschool-web_front_end/tree/master/sass_scss)
 
+### [flexbox](https://github.com/Qcarvalhooliveira/holbertonschool-web_front_end/tree/master/flexbox)
+
+### [form](https://github.com/Qcarvalhooliveira/holbertonschool-web_front_end/tree/master/form)
+
