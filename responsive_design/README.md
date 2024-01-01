@@ -1,4 +1,6 @@
-# **Responsive Design** :computador:
+![responsive_design](https://github.com/Qcarvalhooliveira/holbertonschool-web_front_end/blob/master/responsive_design/image/responsive_design.png)
+
+# **Responsive Design** :computer:
 
 ## **Description** :speech_balloon:
 
