@@ -1,4 +1,4 @@
-![responsive_design](https://github.com/Qcarvalhooliveira/holbertonschool-web_front_end/blob/master/responsive_design/image/responsive_design.png)
+![responsive_design](https://github.com/Qcarvalhooliveira/holbertonschool-web_front_end/blob/master/responsive_design/images/responsive_design.png)
 
 # **Responsive Design** :computer:
 
