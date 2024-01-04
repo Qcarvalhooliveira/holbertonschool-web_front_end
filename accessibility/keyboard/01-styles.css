@@ -668,6 +668,7 @@
     display: block;
     text-decoration: none;
     padding-top: 45%;
+    opacity: 0;
   }
 
   .card-work .card-title a:focus,
@@ -696,7 +697,7 @@
     .card-work .card-title a {
       display: block;
       padding: 2rem 1rem 0 1rem;
-      opacity: 0;
+      
     }
   
     .card-work:hover .card-image {
