@@ -1,3 +1,5 @@
+![html](https://github.com/Qcarvalhooliveira/holbertonschool-web-development/blob/main/html_advanced/images/HTML.svg)
+
 # **Advanced HTML** :computer:
 
 ## **Description**:speech_balloon:
