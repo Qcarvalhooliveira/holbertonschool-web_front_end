@@ -1,4 +1,4 @@
-![bootstrap](https://github.com/Qcarvalhooliveira/holbertonschool-web_front_end/blob/master/Bootstrap/images/bootstrap.png)
+![bootstrap](https://github.com/Qcarvalhooliveira/holbertonschool-web_front_end/blob/master/Bootstrap/images/bootstrap.jpg)
 
 # **Bootstrap** :computer:
 
