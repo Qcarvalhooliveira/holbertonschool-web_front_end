@@ -1,4 +1,6 @@
-![bootstrap](https://github.com/Qcarvalhooliveira/holbertonschool-web_front_end/blob/master/Bootstrap/images/bootstrap.jpg)
+<p align="center">
+  <img src="https://github.com/Qcarvalhooliveira/holbertonschool-web_front_end/blob/master/Bootstrap/images/bootstrap.jpg" alt="bootstrap"/>
+</p>
 
 # **Bootstrap** :computer:
 
