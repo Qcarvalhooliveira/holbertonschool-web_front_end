@@ -2,7 +2,7 @@ var globalVariable = "Welcome";
 function outer() {
     alert(globalVariable);
 
-    var course = " Holberton";
+    var course = "Holberton";
 
     function inner() {
         alert(globalVariable + course);
