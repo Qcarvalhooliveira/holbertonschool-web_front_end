@@ -1,4 +1,4 @@
-![Javascript_advanced](https://github.com/Qcarvalhooliveira/holbertonschool-web_front_end/blob/master/Javascript_advanced/images/Javascript_advanced.jpg)
+<img src="https://github.com/Qcarvalhooliveira/holbertonschool-web_front_end/blob/master/Javascript_advanced/images/Javascript_advanced.jpg" width="1000" height="300">
 
 # **Javascript_advanced** :computer:
 
