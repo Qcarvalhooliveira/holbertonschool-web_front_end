@@ -1,3 +1,5 @@
+<img src="https://github.com/Qcarvalhooliveira/holbertonschool-web_front_end/blob/master/JQuery_advanced/image/jQuery-Advanced.png" width="1000" height="300">
+
 # **JQuery_advanced** :computer:
 
 ## **Description** :speech_balloon:

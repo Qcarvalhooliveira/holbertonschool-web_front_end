@@ -21,3 +21,5 @@
 ### [Bootstrap](https://github.com/Qcarvalhooliveira/holbertonschool-web_front_end/tree/master/Bootstrap)
 
 ### [Javascript_advanced](https://github.com/Qcarvalhooliveira/holbertonschool-web_front_end/tree/master/Javascript_advanced)
+
+### [JQuery_advanced](https://github.com/Qcarvalhooliveira/holbertonschool-web_front_end/tree/master/JQuery_advanced)
