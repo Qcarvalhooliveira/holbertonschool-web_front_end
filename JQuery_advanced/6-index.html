@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <title>Task 6</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <script type="application/javascript">
+            function createFamilyTree() {
+                $('body').append(
+                    $('<table>').append(
+                        $('<thead>').append(
+                            $('<tr>').append(
+                                $('<th>').text('Firstname'),
+                                $('<th>').text('Lastname')
+                            )
+                        ),
+                        $('<tbody>')
+                    )
+                );
+            }
+
+            function addNewMember(firstName, lastName, position) {
+                $('tbody')[position === 'before' ? 'prepend' : 'append'](
+                    $('<tr>').append(
+                        $('<td>').text(firstName),
+                        $('<td>').text(lastName),
+                        $('<td>').text('(x)').css('background-color', 'orange').click(function() {
+                            $(this).parent().remove();
+                        })
+                    )
+                );
+            }
+
+            function createForm() {
+                $('body').prepend(
+                    $('<form>').append(
+                        $('<input>').attr('type', 'text').attr('name', 'firstName'),
+                        $('<input>').attr('type', 'text').attr('name', 'lastName'),
+                        $('<select>').append(
+                            $('<option>').val('before').text('Before'),
+                            $('<option>').val('after').text('After')
+                        ),
+                        $('<input>').attr('type', 'submit').val('Add Member')
+                    ).submit(function(e) {
+                        e.preventDefault();
+                        addNewMember(
+                            $(this).find('input[name="firstName"]').val(),
+                            $(this).find('input:nth-of-type(2)').val(),
+                            $(this).find('select').val()
+                        );
+                    })
+                );
+            }
+
+            createFamilyTree();
+            createForm();
+    
+        </script>
+
+    </body>
+
+</html>
