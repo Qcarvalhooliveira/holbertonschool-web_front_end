@@ -52,7 +52,7 @@
                         sroffset: offset
                     },
                     success: function(data) {
-                        $('ul').first().empty(); // Limpa os artigos atuais
+                        $('ul').first().empty();
                         data.query.search.forEach(function(article) {
                             addNewArticle(article.pageid, article.title, article.snippet);
                         });
@@ -83,5 +83,5 @@
         </script>
 
     </body>
-    
+
 </html>
