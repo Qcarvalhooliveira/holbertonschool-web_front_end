@@ -8,16 +8,17 @@
     <body>
         <script type="application/javascript">
             function addPostRow(data) {
-                var paragraph = $('<p>').attr('id', 'row-' + data.id);
-                var deleteSpan = $('<span>').text('(delete)').css('cursor', 'pointer').click(function() {
-                    deletePost(data.id);
-                });
-
-                paragraph.append(deleteSpan).append(
-                    $('<span>').text(` Post created with id ${data.id}, title: ${data.title}, author: ${data.author}`)
+                $('body').append(
+                    $('<p>').attr('id', 'row-' + data.id)
+                        .append(
+                        $('<span>').text('(delete)').css('cursor', 'pointer').click(function() {
+                            deletePost(data.id);
+                        })
+                    )
+                        .append(
+                        $('<span>').text(` Post created with id ${data.id}, title: ${data.title}, author: ${data.author}`)
+                    )
                 );
-
-                $('body').append(paragraph);
             }
 
             function deletePost(id) {
@@ -93,5 +94,5 @@
         </script>
 
     </body>
-    
+
 </html>
