@@ -1,0 +1,15 @@
+{
+  "name": "jquery_advanced",
+  "version": "1.0.0",
+  "description": "<img src=\"https://github.com/Qcarvalhooliveira/holbertonschool-web_front_end/blob/master/JQuery_advanced/image/jQuery-Advanced.png\" width=\"1000\" height=\"300\">",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^1.0.0-alpha.23"
+  }
+}
