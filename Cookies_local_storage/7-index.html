@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <title>Task 7</title>
+    </head>
+    <body>
+        
+        <script type="application/javascript">
+            const availableItems = ["Shampoo", "Soap", "Sponge", "Water"];
+
+            if (typeof(sessionStorage) === "undefined") {
+                alert("Sorry, your browser does not support Web storage. Try again with a better one.");
+            } else {
+                createStore();
+                displayCart();
+            }
+
+            function getCartFromStorage() {
+                const cartJSON = sessionStorage.getItem('cart');
+                return cartJSON ? JSON.parse(cartJSON) : {};
+
+            }
+
+            function addItemToCart(item) {
+                const cart = getCartFromStorage();
+                cart[item] = cart[item] ? cart[item] + 1 : 1;
+                sessionStorage.setItem('cart', JSON.stringify(cart));
+                displayCart();
+            }
+
+            function removeItemfromCart(item) {
+                const cart = getCartFromStorage();
+                delete cart[item];
+                sessionStorage.setItem('cart', JSON.stringify(cart));
+                displayCart();
+            }
+
+            function clearCart() {
+                sessionStorage.clear();
+                displayCart();
+            }
+
+            function createStore() {
+                const h2 = document.createElement('h2');
+                h2.textContent = 'Available products:';
+                document.body.appendChild(h2);
+    
+                const ul = document.createElement("ul");
+                document.body.appendChild(ul);
+
+                availableItems.forEach(item => {
+                    const li = document.createElement("li");
+                    li.textContent = item;
+                    li.style.cursor = "pointer";
+                    li.onclick = () => addItemToCart(item);
+                    ul.appendChild(li);
+                });
+            }
+
+            function displayCart() {
+                let cartDiv = document.getElementById('cart');
+                if (!cartDiv) {
+                    const h2 = document.createElement('h2');
+                    h2.textContent = 'Your cart:';
+                    document.body.appendChild(h2);
+
+                    cartDiv = document.createElement('div');
+                    cartDiv.id = 'cart';
+                    document.body.appendChild(cartDiv);
+                } else {
+                    cartDiv.innerHTML = ''; // Limpa o carrinho para atualização
+                }
+                updateCart();
+            }
+
+            function updateCart() {
+                const cart = getCartFromStorage();
+                const cartDiv = document.getElementById('cart');
+                cartDiv.innerHTML = '';
+
+                const ul = document.createElement('ul');
+                cartDiv.appendChild(ul);
+
+
+                let isEmpty = true;
+                for (const item in cart) {
+                    if (cart.hasOwnProperty(item)) {
+                        isEmpty = false;
+                        break;
+                    }
+                }
+
+                if (!isEmpty) {
+
+                    const clearBtn = document.createElement('li');
+                    clearBtn.textContent = 'Clear my cart';
+                    clearBtn.style.cursor = "pointer";
+                    clearBtn.onclick = () => {
+                        clearCart();
+                    };
+                    ul.appendChild(clearBtn);
+                }
+
+
+                let itemCount = 0;
+                for (const item in cart) {
+                    itemCount++;
+                    const li = document.createElement('li');
+                    li.textContent = `${item} x ${cart[item]} (remove)`;
+                    li.style.cursor = "pointer";
+                    li.onclick = () => {
+                        removeItemfromCart(item);
+                    };
+                    ul.appendChild(li);
+                }
+
+                if (itemCount === 0) {
+        
+                    const emptyMsg = document.createElement('li');
+                    emptyMsg.textContent = 'Your cart is empty';
+                    ul.appendChild(emptyMsg);
+                }
+            }
+
+        </script>    
+    </body>
+</html>
