@@ -33,6 +33,10 @@ module.exports = {
       template: './5-index.html',
       filename: '5-index.html',
     }),
+    new HtmlWebpackPlugin({
+      template: './6-index.html',
+      filename: '6-index.html',
+    }),
   ],
   devServer: {
     static: {
