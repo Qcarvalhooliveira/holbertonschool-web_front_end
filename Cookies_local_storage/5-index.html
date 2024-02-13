@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <title>Task 5</title>
+    </head>
+    <body>
+        <script type="application/javascript">
+            const availableItems = ["Shampoo", "Soap", "Sponge", "Water"];
+
+            if (typeof(Storage) === "undefined") {
+                alert("Sorry, your browser does not support Web storage. Try again with a better one.");
+            } else {
+                createStore();
+                displayCart();
+            }
+
+            function addItemToCart(item) {
+                localStorage.setItem(item, true);
+                displayCart();
+            }
+
+            function createStore() {
+                const ul = document.createElement("ul");
+                document.body.appendChild(ul);
+
+                availableItems.forEach(item => {
+                    const li = document.createElement("li");
+                    li.textContent = item;
+                    li.onclick = function() { addItemToCart(item); };
+                    ul.appendChild(li);
+                });
+            }
+
+            function displayCart() {
+                let itemCount = 0;
+                for (let i = 0; i < localStorage.length; i++) {
+                    if (localStorage.getItem(availableItems[i])) {
+                        itemCount++;
+                    }
+                }
+
+                if (itemCount > 0) {
+
+                    const itemText = itemCount === 1 ? "item" : "items";
+                    const message = `You previously had ${itemCount} ${itemText} in your cart`;
+                    let p = document.querySelector("p#cartMessage");
+                    if (!p) {
+                        p = document.createElement("p");
+                        p.id = "cartMessage";
+                        document.body.appendChild(p);
+                    }
+                    p.textContent = message;
+                }
+            }
+
+        </script>    
+    </body>
+</html>
